@@ -179,6 +179,7 @@ public final class ScreenshotDecorator extends NevoDecoratorService {
 
                 final PendingIntent editPendingIntent;
                 final CharSequence editActionText;
+                Log.d(TAG, "Edit Available");
                 if (mPreferences.isPreferredEditorAvailable()) {
                     Log.d(TAG, "Your preferred editor is available.");
                     intent.setComponent(mPreferences.getPreferredEditorComponentName()
